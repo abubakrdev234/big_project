@@ -28,7 +28,7 @@ class _ListenPageState extends State<ListenPage> {
 
   Future<void> load() async {
     String num = widget.surah.id.toString().padLeft(3, "0");
-    await player.setUrl("https://server8.mp3quran.net/download/afs/$num.mp3");
+    await player.setUrl("https://server12.mp3quran.net/maher/$num.mp3");
   }
 
   @override
@@ -95,7 +95,7 @@ class _ListenPageState extends State<ListenPage> {
                           ),
                           Text(duration),
                         ],
-                      ),
+                      ), 
                     );
                   },
                 ),
